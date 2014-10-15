@@ -4,7 +4,6 @@ title: DataONE Focus Group
 permalink: /d1-focus/
 ---
 
-# DataONE AHM Focus Group on DLMs
 Held Thursday 2 October during the DataONE All Hands Meeting in Albuquerque, New Mexico. Attendees included Matt Jones, Dave Vieglais, Carly Strasser, Patricia Cruse, Amber Budden, Rebecca Koskela, Bill Michener, Ben Leinfelder, Stephanie Wright, Amy Hodge, Paolo, David Bloom, Bruce Grant, Bruce Wilson, Gail Steinhart, ...
 
 ## Questions 
