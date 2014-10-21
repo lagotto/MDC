@@ -18,4 +18,4 @@ Sub-folders
 * [Unit 2: Data Usage Tracking](https://drive.google.com/#folders/0Bybc-r0gdonARkRYN2lNNWV5Tzg)
 * [Unit 3: Data Activity Aggregation](https://drive.google.com/#folders/0Bybc-r0gdonAS19RZ05yVEpSalk)
 * [Unit 4: Aggregation and Presentation](https://drive.google.com/#folders/0Bybc-r0gdonAZi0wd1JMenhUT2M)
-* Unit 5: Bibliometric Analysis](https://drive.google.com/#folders/0Bybc-r0gdonAczEyLUxNRTF6dHM)
+* [Unit 5: Bibliometric Analysis](https://drive.google.com/#folders/0Bybc-r0gdonAczEyLUxNRTF6dHM)
