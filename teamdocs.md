@@ -13,6 +13,7 @@ NSF Grant Record: [Grant No. 1448821](http://www.nsf.gov/awardsearch/showAward?A
 [MDC Google Docs folder](https://drive.google.com/#folders/0Bwq_OgwoRF1AekZaTkRwNUlUd3M)
 
 Sub-folders
+
 * [Unit 1: Field Research](https://drive.google.com/#folders/0Bybc-r0gdonAaXU0dGI4YzdEMWc)
 * [Unit 2: Data Usage Tracking](https://drive.google.com/#folders/0Bybc-r0gdonARkRYN2lNNWV5Tzg)
 * [Unit 3: Data Activity Aggregation](https://drive.google.com/#folders/0Bybc-r0gdonAS19RZ05yVEpSalk)
