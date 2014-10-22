@@ -58,35 +58,35 @@ We propose to design and develop metrics that track and measure data use, “dat
 
 ## Work Components
 
-1. DLM Field Research (Oct-Jan)
+### DLM Field Research (Oct-Jan)
 
   * What: Surveys, interviews, focus groups to determine requirements for DLM
   * Who: CDL with PLOS input
   * Input: list of questions/things we want to know from the community
   * Output: metrics design & requirements
 
-2. Data Usage Tracking (Nov-Feb)
+### Data Usage Tracking (Nov-Feb)
 
   * What: Extend DataONE usage tracking capacity 
   * Who: DataONE with PLOS input
   * Input: existing usage API
   * Output: extended usage API (COUNTER)
  
-3. Data Activity Aggregation (Dec-Apr)
+### Data Activity Aggregation (Dec-Apr)
 
   * What: Formulate a set of metrics to text; extend technology
   * Who: PLOS
   * Input: design & requirements
   * Output: DLM application
  
-4. DLM Integration & Presentation (May-Jun)
+### DLM Integration & Presentation (May-Jun)
 
   * What:  Develop tools for the community to use metrics
   * Who: PLOS 
   * Input: ALM Reports source code, DLM data
   * Output: DLM Reports application & widgets
   
-5. Bibliometric Analysis (July-Sep)
+### Bibliometric Analysis (July-Sep)
 
   * What: Analyze, write up results from project
   * Who: PLOS, CDL, DataONE
