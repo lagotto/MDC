@@ -10,24 +10,24 @@ permalink: /project-plan/
 
 ## Project Communication
 
-* Internal documentation: Google docs - MDC project space 
-* Public documentation: MDC Github pages 
-* Progress update meetings with entire team at the end of each work unit: conference call
-* Public announcements: organization blogs or news platforms
-  * [CDL Data Pub](http://datapub.cdlib.org)
-  * [PLOS Tech](http://blogs.plos.org/tech)
+* Internal documentation: [Google docs folder](https://drive.google.com/#folders/0Bwq_OgwoRF1AekZaTkRwNUlUd3M)
+* Public documentation: [MDC Github pages](http://github.com/articlemetrics/MDC) and [articmetrics.github.io/MDC](http://articlemetrics.github.io/MDC)
+* Progress update meetings with entire team at the end of each work unit via conference call
+* Public announcements: blogs and news platforms
+  * [CDL Data Pub blog](http://datapub.cdlib.org)
+  * [PLOS Tech blog](http://blogs.plos.org/tech)
   * [DataONE News](https://www.dataone.org/news)
-* Social media platform: Twitter
-  * @plosalm
-  * @UC3CDL
-  * @DataONEorg
+* Social media: Twitter
+  * [@plosalm](http://twitter.com/plosalm)
+  * [@UC3CDL](http://twitter.com/UC3CDL)
+  * [@DataONEorg](http://twitter.com/DataONEorg)
 
 ## Personnel
 
 * CDL
   * Patricia Cruse (5%), Project oversight
   * John Kratz (in-kind), Field research
-  * Carly Strasser (25%), PM for field research
+  * [Carly Strasser](http://carlystrasser.net) (25%), PM for field research
 * NCEAS / DataONE
   * Amber Budden (in-kind), DataONE Community Engagement
   * Matt Jones (in-kind), DataONE oversight, Manage development
@@ -37,7 +37,7 @@ permalink: /project-plan/
   * John Chodacki (in-kind), Product Director, PLOS oversight
   * Martin Fenner (100%), Technical Lead, DLM developer
   * Jennifer Lin (50%), PM
-  * Kristen Ratan (in-kind), Publisher,  PLOS oversight
+  * Kristen Ratan (in-kind), Publisher, PLOS oversight
 
 
 ## High-level Project Summary
@@ -49,28 +49,28 @@ permalink: /project-plan/
 
 ## Work Components
 
-### DLM Field Research (Oct-Jan)
+### 1. DLM Field Research (Oct-Jan)
 
   * What: Surveys, interviews, focus groups to determine requirements for DLM
   * Who: CDL with PLOS input
   * Input: list of questions/things we want to know from the community
   * Output: metrics design & requirements
 
-### Data Usage Tracking (Nov-Feb)
+### 2. Data Usage Tracking (Nov-Feb)
 
   * What: Extend DataONE usage tracking capacity 
   * Who: DataONE with PLOS input
   * Input: existing usage API
   * Output: extended usage API (COUNTER)
  
-### Data Activity Aggregation (Dec-Apr)
+### 3. Data Activity Aggregation (Dec-Apr)
 
   * What: Formulate a set of metrics to text; extend technology
   * Who: PLOS
   * Input: design & requirements
   * Output: DLM application
  
-### DLM Integration & Presentation (May-Jun)
+### 4. DLM Integration & Presentation (May-Jun)
 
   * What:  Develop tools for the community to use metrics
   * Who: PLOS 
