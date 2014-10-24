@@ -1,17 +1,12 @@
 ---
 layout: page
-title: Project Overview
-permalink: /overview/
+title: Project Plan
+permalink: /project-plan/
 ---
-
-**Partners**: CDL, PLOS, DataONE
 
 **Proposal**: [PDF on eScholarship](http://escholarship.org/uc/item/9kf081vf)
 
-**NSF Grant Record**: [Grant No. 1448821](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1448821&HistoricalAwards=false)
-
 **Timeline**: 1 Oct 2014 - 1 Oct 2015
-
 
 ## Project Communication
 
@@ -44,10 +39,6 @@ permalink: /overview/
   * Jennifer Lin (50%), PM
   * Kristen Ratan (in-kind), Publisher,  PLOS oversight
 
-
-## Purpose
-
-We propose to design and develop metrics that track and measure data use, “data-level metrics” (DLM). DLM are a multi-dimensional suite of indicators, measuring the broad range of activity surrounding the reach and use of data as a research output. We will investigate the validity and feasibility of the metrics by collecting them and investigating how to best make use of the data harvested to power discovery and reporting of scholarly these scholarly outputs.  
 
 ## High-level Project Summary
 

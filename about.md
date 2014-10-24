@@ -1,28 +1,29 @@
 ---
-layout: default
+layout: page
+title: About the DLM Project
+permalink: /About/
 ---
 
-<!-- <div class="home">
+## Overview
 
-  <h1>Posts</h1>
+**Partners**: The <a href="http://cdlib.org/services/uc3">UC3</a> group at the [California Digital Library](http://cdlib.org), <a href="http://plos.org">PLOS</a>, and <a href="http://dataone.org">DataONE</a>
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
--->
+**Proposal Text**: [PDF on eScholarship](http://escholarship.org/uc/item/9kf081vf)
+
+**NSF Grant Record**: [Grant No. 1448821](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1448821&HistoricalAwards=false)
+
+**Timeline**: 1 Oct 2014 - 1 Oct 2015
 
 
-We are excited to announce that <a href="http://cdlib.org/services/uc3">UC3</a>, in partnership with <a href="http://plos.org">PLOS</a> and <a href="http://dataone.org">DataONE</a>, are launching a <strong>new project to develop data-level metrics (DLMs)</strong>. This 12-month project is funded by an Early Concept Grants for Exploratory Research (EAGER) grant from the <a href="http://nsf.gov" target="_blank">National Science Foundation</a>, and will result in a suite of metrics that track and measure data use. The <b>proposal is available</b> via CDL's <a href="http://escholarship.org" target="_blank">eScholarship</a> repository: <a href="http://escholarship.org/uc/item/9kf081vf">http://escholarship.org/uc/item/9kf081vf</a>. More information is also available on the <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1448821&amp;HistoricalAwards=false" target="_blank">NSF Website</a>.
-<br><br>
-<strong>Why DLMs?</strong> Sharing data is time consuming and researchers need incentives for undertaking the extra work. Metrics for data will provide feedback on data usage, views, and impact that will help encourage researchers to share their data. This project will explore and test the metrics needed to capture activity surrounding research data.
-<br><br>
+## Project Goal 
+
+We propose to design and develop metrics that track and measure data use, “data-level metrics” (DLM). DLM are a multi-dimensional suite of indicators, measuring the broad range of activity surrounding the reach and use of data as a research output. We will investigate the validity and feasibility of the metrics by collecting them and investigating how to best make use of the data harvested to power discovery and reporting of scholarly these scholarly outputs.  
+
+Sharing data is time consuming and researchers need incentives for undertaking the extra work. Metrics for data will provide feedback on data usage, views, and impact that will help encourage researchers to share their data. This project will explore and test the metrics needed to capture activity surrounding research data.
+
 The DLM pilot will build from the successful open source Article-Level Metrics community project, <a href="https://github.com/articlemetrics/lagotto">Lagotto</a>, originally started by PLOS in 2009. ALM provide a view into the activity surrounding an article after publication, across a broad spectrum of ways in which research is disseminated and used (e.g., viewed, shared, discussed, cited, and recommended, etc.)
-<h2><strong>About the project partners</strong></h2>
+
+## About the Project Partners
 
 <a href="http://plos.org" target="_blank">PLOS</a> (Public Library of Science) is a nonprofit publisher and advocacy organization founded to accelerate progress in science and medicine by leading a transformation in research communication.
 <br><br>
