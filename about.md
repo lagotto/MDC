@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About the DLM Project
-permalink: /About/
+title: About the Project
+permalink: /about/
 ---
 
 ## Overview
