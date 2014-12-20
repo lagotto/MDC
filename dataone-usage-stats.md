@@ -81,6 +81,8 @@ And here's the result:
 </response>
 {% endhighlight %}
 
+This information indicates that this object has id `doi:10.5063/F1PC3085`, that it is a new version of the object with id `knb.499.1`, that it is an `EML` metadata document with formatId `eml://ecoinformatics.org/eml-2.1.1`, and that it is part of the DataPackage that is identified by the resource map id `urn:uuid:5a721c8b-94b1-4c33-9ab2-d99f963a4215`. It also is present in 5 replicas in 5 different data repositories with the listed `replicaMN` node identifiers, which means that DataONE usage statistics would be providing download statistics for this object from these repositories combined.
+
 Of course, because its SOLR, you can also ask for the same info for a range of objects.  For example, the following query gives some metadata for all objects that have had a SystemMetadata modification in the last week.  SystemMetadata gets modified anytime an important event happens to an object, such as an access control change, or if it is obsoleted by a new version, or a new replica is created.
 
 {% highlight sh %} https://cn.dataone.org/cn/v1/query/solr/?fl=id,title,formatId,formatType,documents,resourceMap,obsoletes,obsoletedBy,datePublished,authoritativeMN,replicaMN,dateUploaded,dateModified&q=dateModified:[NOW-7DAYS/DAY%20TO%20NOW]
@@ -215,5 +217,63 @@ and produces output like:
   ...
 </d1:nodeList>
 {% endhighlight %}
+
+## Notes on DataONE Identifiers
+
+DataONE has a [policy on minting persistent identifiers (PIDs)](http://jenkins-1.dataone.org/jenkins/job/API%20Documentation%20-%20trunk/ws/api-documentation/build/html/design/PIDs.html) for data sets.  This policy basically treats identifiers as opaque strings, and simply ensures the identifiers are unique on a first-come first-served basis.  This allows Member Nodes to use the identifiers that they use locally, as long as it follows some basic conventions, including that the identifier is:
+
+* Unique: no other objects share the identifier
+* Persistent: the identifier is assigned in perpetuity (even if the data set itself is no longer accessible)
+* Consistent: the data bytes returned when accessing an identifier will always be identical (i.e., no revisions)
+
+This all means that generally consumers can expect to get the same objects from an identifier, or none at all, which is critical to reproducibility.  We don't require that providers can return every version of every object, only that if asked for an object with a given identifier, the bytes they return never change.  If someone wants to update an object, they must assign a new identifier and indicate in SystemMetadata that the new identifier `obsoletes` the original identifier.  This creates a reliable version history and citation chain.
+
+Unfortunately, in some communities it is common to change the content that lives behind an identifier (such as a DOI). A DOI typically points at a landing page from which a user might retrieve the actual data of the data set, which at times is modified to fix errors or add data.  This poses many problems for reproducibly citing data sets, as a researcher accessing a data set originally cited as `A` will never know if in fact they received `A'` or `A''` instead, as they all share the same identifier.  DataONE does not allow this for their Persistent Identifiers (PIDs).
+
+As a consequence, some DataONE member nodes must append additional information onto their local identifier when posting to DataONE to ensure that the content is persistent.  A classic example is Dryad, where they assign DOIs to data sets, but then must append a timestamp to that DOI to make a unique PID.  Consequently, the identifiers that Dryad publishes to DataONE will be related to but not necessarily identical to the identifiers they publish on their own site.  For example, the Dryad identifier `doi:10.5061/dryad.82t1k` was published in DataONE as `http://dx.doi.org/10.5061/dryad.82t1k/1?ver=2014-02-10T13:01:02.328-05:00`, with an additional version published in DataONE as `http://dx.doi.org/10.5061/dryad.82t1k?ver=2014-02-10T13:00:57.913-05:00`.  In addition, the main Dryad DOI represents the metadata file, and they append a suffix to the DOI to create a unique identifier for a data file that comprises a part of the data set (e.g., the data file `http://dx.doi.org/10.5061/dryad.82t1k/1/bitstream`). Finally, they use a very similar ID for the related ResourceMap that links the contents of the data package (`http://dx.doi.org/10.5061/dryad.82t1k?format=d1rem&ver=2014-02-10T13:00:57.913-05:00`). So, querying DataONE shows four objects that are related to a single Dryad DOI, three of which are different kinds of files, and one of which is a new revision of the metadata file, but seemingly not marked as a new version properly (we'll have to check on that):
+
+{% highlight sh %}
+https://cn.dataone.org/cn/v1/query/solr/?fl=id,obsoletes,obsoletedBy,authoritativeMN,formatId&q=id:*10.5061/dryad.82t1k*&rows=100&start=0
+{% endhighlight %}
+
+{% highlight xml %}
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <lst name="responseHeader">
+    <int name="status">0</int>
+    <int name="QTime">9</int>
+    <lst name="params">
+      <str name="fl">id,obsoletes,obsoletedBy,authoritativeMN,formatId</str>
+      <str name="start">0</str>
+      <str name="q">id:*10.5061/dryad.82t1k*</str>
+      <str name="rows">100</str>
+    </lst>
+  </lst>
+  <result name="response" numFound="4" start="0">
+    <doc>
+      <str name="authoritativeMN">urn:node:DRYAD</str>
+      <str name="formatId">http://www.openarchives.org/ore/terms</str>
+      <str name="id">http://dx.doi.org/10.5061/dryad.82t1k?format=d1rem\&amp;ver=2014-02-10T13:00:57.913-05:00</str>
+    </doc>
+    <doc>
+      <str name="authoritativeMN">urn:node:DRYAD</str>
+      <str name="formatId">http://datadryad.org/profile/v3.1</str>
+      <str name="id">http://dx.doi.org/10.5061/dryad.82t1k/1?ver=2014-02-10T13:01:02.328-05:00</str>
+    </doc>
+    <doc>
+      <str name="authoritativeMN">urn:node:DRYAD</str>
+      <str name="formatId">application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</str>
+      <str name="id">http://dx.doi.org/10.5061/dryad.82t1k/1/bitstream</str>
+    </doc>
+    <doc>
+      <str name="authoritativeMN">urn:node:DRYAD</str>
+      <str name="formatId">http://datadryad.org/profile/v3.1</str>
+      <str name="id">http://dx.doi.org/10.5061/dryad.82t1k?ver=2014-02-10T13:00:57.913-05:00</str>
+    </doc>
+  </result>
+</response>
+{% endhighlight %}
+
+Needless to say, Lagotto will not be able to use simple substring matching to get an accurate portrayal of usage among the various files that constitute a data set in DataONE and match those to Dryad or other repositories.  The information needed to understand the structure,  contents, and versions of a data file is present in DataONE, but the relationships get complex.  They are also dependent upon Member Nodes providing accurate metadata about an object and its version relationships (see the example above from the KNB for one where `obsoletes` properly indicates that one object replaced another).
 
 
