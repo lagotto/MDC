@@ -19,27 +19,32 @@ There are several ways to get at all of this information.  DataONE exposes three
 * __Bennington College, and Huron Mt. Wildlife Foundation and Woods K.__ 2014. *Long-term tree demography in old-growth forests of Huron Mts, MI from permanent-plot censuses, 1962-2009* (doi:10.5063/F1PC3085)
 
 * To get SystemMetadata:
-```sh
+
+{% highlight sh %}
 https://cn.dataone.org/cn/v1/meta/doi:10.5063/F1PC3085
-```
+{% endhighlight %}
+
 * To get ScienceMetadata:
-```sh
+
+{% highlight sh %}
 https://cn.dataone.org/cn/v1/object/doi:10.5063/F1PC3085
-```
+{% endhighlight %}
+
 * To get the ResourceMap (which describes the components of a data package): 
-```sh
+
+{% highlight sh %}
 https://cn.dataone.org/cn/v1/object/urn:uuid:5a721c8b-94b1-4c33-9ab2-d99f963a4215
-```
+{% endhighlight %}
 
 DataONE also indexes most the metadata provided in these individual documents in a SOLR index, so you can issue a SOLR query to get most of the info you want for a single document:
 
-```sh https://cn.dataone.org/cn/v1/query/solr/?fl=id,title,formatId,formatType,documents,resourceMap,obsoletes,obsoletedBy,datePublished,authoritativeMN,replicaMN,dateUploaded,dateModified&q=id:doi\:10.5063/F1PC3085
-```
+{% highlight sh %} https://cn.dataone.org/cn/v1/query/solr/?fl=id,title,formatId,formatType,documents,resourceMap,obsoletes,obsoletedBy,datePublished,authoritativeMN,replicaMN,dateUploaded,dateModified&q=id:doi\:10.5063/F1PC3085
+{% endhighlight %}
 
 And here's the result:
 
-```xml
-  response>
+{% highlight xml %}
+<response>
   <lst name="responseHeader">
     <int name="status">0</int>
     <int name="QTime">6</int>
@@ -73,27 +78,27 @@ And here's the result:
       <str name="title">Long-term tree demography in old-growth forests of Huron Mts, MI from permanent-plot censuses, 1962-2009</str>
     </doc>
   </result>
- </response>
-```
+</response>
+{% endhighlight %}
 
 Of course, because its SOLR, you can also ask for the same info for a range of objects.  For example, the following query gives some metadata for all objects that have had a SystemMetadata modification in the last week.  SystemMetadata gets modified anytime an important event happens to an object, such as an access control change, or if it is obsoleted by a new version, or a new replica is created.
 
-``` https://cn.dataone.org/cn/v1/query/solr/?fl=id,title,formatId,formatType,documents,resourceMap,obsoletes,obsoletedBy,datePublished,authoritativeMN,replicaMN,dateUploaded,dateModified&q=dateModified:[NOW-7DAYS/DAY%20TO%20NOW]
-```
+{% highlight sh %} https://cn.dataone.org/cn/v1/query/solr/?fl=id,title,formatId,formatType,documents,resourceMap,obsoletes,obsoletedBy,datePublished,authoritativeMN,replicaMN,dateUploaded,dateModified&q=dateModified:[NOW-7DAYS/DAY%20TO%20NOW]
+{% endhighlight %}
 
-You could add more filter criteria, such as restrict it to only documents on one node (e.g., "urn:node:DRYAD").
+You could add more filter criteria, such as restrict it to only documents on one node (e.g., `datasource:urn\:node\:DRYAD`).
 
 ## Getting download statistics for each object:
 
-We also record download stats in another SOLR index that I mentioned in previous posts, and which are described in [DataONE Usage Statistics](http://jenkins-1.dataone.org/jenkins/job/API%20Documentation%20-%20trunk/ws/api-documentation/build/html/design/UsageStatistics.html).  For the KNB data set above, you could get monthly download stats using:
+We also record download stats (and download size) in another SOLR index that I mentioned in previous posts, and which are described in [DataONE Usage Statistics](http://jenkins-1.dataone.org/jenkins/job/API%20Documentation%20-%20trunk/ws/api-documentation/build/html/design/UsageStatistics.html).  For the KNB data set above, you could get monthly download stats using:
 
-``` https://cn.dataone.org/cn/v1/query/logsolr/select?q=pid:doi\:10.5063/F1PC3085&fq=event:read&facet=true&facet.range=dateLogged&facet.range.start=2014-01-01T01:01:01Z&facet.range.end=2014-12-31T24:59:59Z&facet.range.gap=%2B1MONTH
-```
+{% highlight sh %} https://cn.dataone.org/cn/v1/query/logsolr/select?q=pid:doi\:10.5063/F1PC3085&fq=event:read&facet=true&facet.range=dateLogged&facet.range.start=2014-01-01T01:01:01Z&facet.range.end=2014-12-31T24:59:59Z&facet.range.gap=%2B1MONTH
+{% endhighlight %}
 
 Of course, it's likely you'll want download statistics for each object that has been accessed on a given day.  As an example, just facet by the object identifier and query the for log events from the past week (not including today):
 
-``` https://cn.dataone.org/cn/v1/query/logsolr/select?q=event:read+dateLogged:[NOW-7DAYS/DAY%20TO%20NOW]&facet=true&facet.field=pid&facet.mincount=1&facet.limit=-1
-```
+{% highlight sh %} https://cn.dataone.org/cn/v1/query/logsolr/select?q=event:read+dateLogged:[NOW-7DAYS/DAY%20TO%20NOW]&facet=true&facet.field=pid&facet.mincount=1&facet.limit=-1
+{% endhighlight %}
 
 Lagotto will more likely want to query for just a single day to get finer-grained counts, and update its index daily.  Note that this query returns a count for each pid in the time period, and that one will need to step through multiple pages of results by incrementing facet.offset (possibly in pages of 1000), or get all of the results in one page by setting facet.limit=-1.
 
@@ -101,27 +106,27 @@ Lagotto will more likely want to query for just a single day to get finer-graine
 
 For the KNB node, you could see monthly download statistics using:
 
-```
+{% highlight sh %}
 https://cn.dataone.org/cn/v1/query/logsolr/select?q=nodeId:urn\:node\:KNB&fq=event:read&facet=true&facet.range=dateLogged&facet.range.start=2000-01-01T01:01:01Z&facet.range.end=2014-12-31T24:59:59Z&facet.range.gap=%2B1MONTH
-```
+{% endhighlight %}
 
 And the same stats for Dryad:
 
-```
+{% highlight sh %}
 https://cn.dataone.org/cn/v1/query/logsolr/select?q=nodeId:urn\:node\:DRYAD&fq=event:read&facet=true&facet.range=dateLogged&facet.range.start=2000-01-01T01:01:01Z&facet.range.end=2014-12-31T24:59:59Z&facet.range.gap=%2B1MONTH
-```
+{% endhighlight %}
 
 ## Getting information about Member Nodes
 
 DataONE returns a Member Node `nodeId` in many data structures, such as `urn:node:KNB`. This is the permanent, unique, and unchanging identifier for the node, but is not particularly human readable.  DataONE also provides a node registry that provides additional metadata about Member Nodes that Lagotto might want to use in user interface displays, such as the node name.  The node registry can be accessed at:
 
-```sh
+{% highlight sh %}
 https://cn.dataone.org/cn/v1/node
-```
+{% endhighlight %}
 
 and produces output like:
 
-```xml
+{% highlight xml %}
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/cn/xslt/dataone.types.v1.xsl"?>
 <d1:nodeList xmlns:d1="http://ns.dataone.org/service/types/v1">
@@ -209,5 +214,6 @@ and produces output like:
   </node>
   ...
 </d1:nodeList>
-```
+{% endhighlight %}
+
 
