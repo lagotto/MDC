@@ -6,7 +6,7 @@ permalink: /about/
 
 ## Overview
 
-**Partners**: The <a href="http://cdlib.org/services/uc3">UC3</a> group at the [California Digital Library](http://cdlib.org), <a href="http://plos.org">PLOS</a>, and <a href="http://dataone.org">DataONE</a>
+**Partners**: The <a href="http://cdlib.org/services/uc3">UC3</a> group at the [California Digital Library](http://cdlib.org), <a href="http://plos.org">PLOS</a>, and <a href="http://www.nceas.ucsb.edu">NCEAS</a> from the <a href="http://dataone.org">DataONE</a> federation
 
 **Proposal Text**: [PDF on eScholarship](http://escholarship.org/uc/item/9kf081vf)
 
