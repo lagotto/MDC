@@ -110,6 +110,7 @@ Lagotto will more likely want to query for just a single day to get finer-graine
 The query above returns all log records, including robots and administrative servers, and repeat visits.  In order to see only the COUNTER-compliant records, MDC can add filters to exclude all robots (`inFullRobotList:false`), exclude web search robots but count accesses from analytical systems (`inPartialRobotList:false`), and exclude repeat visits (`isRepeatVisit:false`).
 
 {% highlight sh %} https://cn.dataone.org/cn/v1/query/logsolr/select?q=event:read+dateLogged:[NOW-7DAYS/DAY%20TO%20NOW]+AND+isRepeatVisit:false+AND+inPartialRobotList:false&facet=true&facet.field=pid&facet.mincount=1&facet.limit=1000
+{% endhighlight %}
 
 As in the examples from the section above, decisions will be need to be made about how to aggregate statistics across objects contained in a data package and across versions of those objects.
 
