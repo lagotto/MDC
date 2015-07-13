@@ -41,7 +41,7 @@ DataONE also indexes most the metadata provided in these individual documents in
 {% highlight sh %} https://cn.dataone.org/cn/v1/query/solr/?fl=id,title,formatId,formatType,documents,resourceMap,obsoletes,obsoletedBy,datePublished,authoritativeMN,replicaMN,dateUploaded,dateModified&q=id:doi\:10.5063/F1PC3085
 {% endhighlight %}
 
-And here's the result:
+And here is the result:
 
 {% highlight xml %}
 <response>
@@ -92,17 +92,26 @@ You could add more filter criteria, such as restrict it to only documents on one
 
 ## Getting download statistics for each object:
 
-We also record download stats (and download size) in another SOLR index that I mentioned in previous posts, and which are described in [DataONE Usage Statistics](http://jenkins-1.dataone.org/jenkins/job/API%20Documentation%20-%20trunk/ws/api-documentation/build/html/design/UsageStatistics.html).  For the KNB data set above, you could get monthly download stats using:
+We also record download stats (and download size) in another SOLR index that I mentioned in previous posts, and which are described in [DataONE Usage Statistics](http://jenkins-1.dataone.org/jenkins/job/API%20Documentation%20-%20trunk/ws/api-documentation/build/html/design/UsageStatistics.html).  
+This log index in DataONE has been recently installed in production, and so is currently (July 13, 2015) in process of reindexing all of the historical log records using the additional COUNTER compliance flags from MDC.  As the index rebuilds, it is possible to query the partially complete log records using our ORC coordinating node.  Once reindexing is complete, the full index will be installed on the production CN and kept continuously updated. The example queries below use the product CN address (http://cn.dataone.org), but these queries will not function properly until the index rebuilds.  In the meantime, the partially rebuilt index can be accessed at the ORC CN (http://cn-orc-1.dataone.org) for the purpose of testing, but the records will not be complete. We expect the records to be completely indexed by Aug 1, 2015.
+
+For the KNB data set above, you could get monthly download stats for 2014 using:
 
 {% highlight sh %} https://cn.dataone.org/cn/v1/query/logsolr/select?q=pid:doi\:10.5063/F1PC3085&fq=event:read&facet=true&facet.range=dateLogged&facet.range.start=2014-01-01T01:01:01Z&facet.range.end=2014-12-31T24:59:59Z&facet.range.gap=%2B1MONTH
 {% endhighlight %}
 
-Of course, it's likely you'll want download statistics for each object that has been accessed on a given day.  As an example, just facet by the object identifier and query the for log events from the past week (not including today):
+Of course, it is likely MDC will want download statistics for each object that has been accessed on a given time period.  To get this, facet by the object identifier and query the for log events from the time period, such as the past week (not including today):
 
-{% highlight sh %} https://cn.dataone.org/cn/v1/query/logsolr/select?q=event:read+dateLogged:[NOW-7DAYS/DAY%20TO%20NOW]&facet=true&facet.field=pid&facet.mincount=1&facet.limit=-1
+{% highlight sh %} https://cn.dataone.org/cn/v1/query/logsolr/select?q=event:read+dateLogged:[NOW-7DAYS/DAY%20TO%20NOW]&facet=true&facet.field=pid&facet.mincount=1&facet.limit=1000
 {% endhighlight %}
 
 Lagotto will more likely want to query for just a single day to get finer-grained counts, and update its index daily.  Note that this query returns a count for each pid in the time period, and that one will need to step through multiple pages of results by incrementing facet.offset (possibly in pages of 1000), or get all of the results in one page by setting facet.limit=-1.
+
+The query above returns all log records, including robots and administrative servers, and repeat visits.  In order to see only the COUNTER-compliant records, MDC can add filters to exclude all robots (`inFullRobotList:false`), exclude web search robots but count accesses from analytical systems (`inPartialRobotList:false`), and exclude repeat visits (`isRepeatVisit:false`).
+
+{% highlight sh %} https://cn.dataone.org/cn/v1/query/logsolr/select?q=event:read+dateLogged:[NOW-7DAYS/DAY%20TO%20NOW]+AND+isRepeatVisit:false+AND+inPartialRobotList:false&facet=true&facet.field=pid&facet.mincount=1&facet.limit=1000
+
+As in the examples from the section above, decisions will be need to be made about how to aggregate statistics across objects contained in a data package and across versions of those objects.
 
 ## Getting download statistics for each Member Node
 
@@ -226,11 +235,11 @@ DataONE has a [policy on minting persistent identifiers (PIDs)](http://jenkins-1
 * Persistent: the identifier is assigned in perpetuity (even if the data set itself is no longer accessible)
 * Consistent: the data bytes returned when accessing an identifier will always be identical (i.e., no revisions)
 
-This all means that generally consumers can expect to get the same objects from an identifier, or none at all, which is critical to reproducibility.  We don't require that providers can return every version of every object, only that if asked for an object with a given identifier, the bytes they return never change.  If someone wants to update an object, they must assign a new identifier and indicate in SystemMetadata that the new identifier `obsoletes` the original identifier.  This creates a reliable version history and citation chain.
+This all means that generally consumers can expect to get the same objects from an identifier, or none at all, which is critical to reproducibility.  We do not require that providers can return every version of every object, only that if asked for an object with a given identifier, the bytes they return never change.  If someone wants to update an object, they must assign a new identifier and indicate in SystemMetadata that the new identifier `obsoletes` the original identifier.  This creates a reliable version history and citation chain.
 
-Unfortunately, in some communities it is common to change the content that lives behind an identifier (such as a DOI). A DOI typically points at a landing page from which a user might retrieve the actual data of the data set, which at times is modified to fix errors or add data.  This poses many problems for reproducibly citing data sets, as a researcher accessing a data set originally cited as `A` will never know if in fact they received `A'` or `A''` instead, as they all share the same identifier.  DataONE does not allow this for their Persistent Identifiers (PIDs).
+Unfortunately, in some communities it is common to change the content that lives behind an identifier (such as a DOI). A DOI typically points at a landing page from which a user might retrieve the actual data of the data set, which at times is modified to fix errors or add data.  This poses many problems for reproducibly citing data sets, as a researcher accessing a data set originally cited as `A` will never know if in fact they received `A version 1` or `A version 2` instead, as they all share the same identifier.  DataONE does not allow this for their Persistent Identifiers (PIDs).
 
-As a consequence, some DataONE member nodes must append additional information onto their local identifier when posting to DataONE to ensure that the content is persistent.  A classic example is Dryad, where they assign DOIs to data sets, but then must append a timestamp to that DOI to make a unique PID.  Consequently, the identifiers that Dryad publishes to DataONE will be related to but not necessarily identical to the identifiers they publish on their own site.  For example, the Dryad identifier `doi:10.5061/dryad.82t1k` was published in DataONE as `http://dx.doi.org/10.5061/dryad.82t1k/1?ver=2014-02-10T13:01:02.328-05:00`, with an additional version published in DataONE as `http://dx.doi.org/10.5061/dryad.82t1k?ver=2014-02-10T13:00:57.913-05:00`.  In addition, the main Dryad DOI represents the metadata file, and they append a suffix to the DOI to create a unique identifier for a data file that comprises a part of the data set (e.g., the data file `http://dx.doi.org/10.5061/dryad.82t1k/1/bitstream`). Finally, they use a very similar ID for the related ResourceMap that links the contents of the data package (`http://dx.doi.org/10.5061/dryad.82t1k?format=d1rem&ver=2014-02-10T13:00:57.913-05:00`). So, querying DataONE shows four objects that are related to a single Dryad DOI, three of which are different kinds of files, and one of which is a new revision of the metadata file, but seemingly not marked as a new version properly (we'll have to check on that):
+As a consequence, some DataONE member nodes must append additional information onto their local identifier when posting to DataONE to ensure that the content is persistent.  A classic example is Dryad, where they assign DOIs to data sets, but then must append a timestamp to that DOI to make a unique PID.  Consequently, the identifiers that Dryad publishes to DataONE will be related to but not necessarily identical to the identifiers they publish on their own site.  For example, the Dryad identifier `doi:10.5061/dryad.82t1k` was published in DataONE as `http://dx.doi.org/10.5061/dryad.82t1k/1?ver=2014-02-10T13:01:02.328-05:00`, with an additional version published in DataONE as `http://dx.doi.org/10.5061/dryad.82t1k?ver=2014-02-10T13:00:57.913-05:00`.  In addition, the main Dryad DOI represents the metadata file, and they append a suffix to the DOI to create a unique identifier for a data file that comprises a part of the data set (e.g., the data file `http://dx.doi.org/10.5061/dryad.82t1k/1/bitstream`). Finally, they use a very similar ID for the related ResourceMap that links the contents of the data package (`http://dx.doi.org/10.5061/dryad.82t1k?format=d1rem&ver=2014-02-10T13:00:57.913-05:00`). So, querying DataONE shows four objects that are related to a single Dryad DOI, three of which are different kinds of files, and one of which is a new revision of the metadata file, but seemingly not marked as a new version properly (we will have to check on that):
 
 {% highlight sh %}
 https://cn.dataone.org/cn/v1/query/solr/?fl=id,obsoletes,obsoletedBy,authoritativeMN,formatId&q=id:*10.5061/dryad.82t1k*&rows=100&start=0
