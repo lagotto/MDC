@@ -15,13 +15,13 @@ permalink: /about/
 **Timeline**: 1 Oct 2014 - 1 Oct 2015
 
 
-## Project Goal 
+## Project Goal
 
-We propose to design and develop metrics that track and measure data use, “data-level metrics” (DLM). DLM are a multi-dimensional suite of indicators, measuring the broad range of activity surrounding the reach and use of data as a research output. We will investigate the validity and feasibility of the metrics by collecting them and investigating how to best make use of the data harvested to power discovery and reporting of scholarly these scholarly outputs.  
+We propose to design and develop metrics that track and measure data use, “data-level metrics” (DLM). DLM are a multi-dimensional suite of indicators, measuring the broad range of activity surrounding the reach and use of data as a research output. We will investigate the validity and feasibility of the metrics by collecting them and investigating how to best make use of the data harvested to power discovery and reporting of scholarly these scholarly outputs.
 
 Sharing data is time consuming and researchers need incentives for undertaking the extra work. Metrics for data will provide feedback on data usage, views, and impact that will help encourage researchers to share their data. This project will explore and test the metrics needed to capture activity surrounding research data.
 
-The DLM pilot will build from the successful open source Article-Level Metrics community project, <a href="https://github.com/articlemetrics/lagotto">Lagotto</a>, originally started by PLOS in 2009. ALM provide a view into the activity surrounding an article after publication, across a broad spectrum of ways in which research is disseminated and used (e.g., viewed, shared, discussed, cited, and recommended, etc.)
+The DLM pilot will build from the successful open source Article-Level Metrics community project, <a href="https://github.com/lagotto/lagotto">Lagotto</a>, originally started by PLOS in 2009. ALM provide a view into the activity surrounding an article after publication, across a broad spectrum of ways in which research is disseminated and used (e.g., viewed, shared, discussed, cited, and recommended, etc.)
 
 ## About the Project Partners
 
