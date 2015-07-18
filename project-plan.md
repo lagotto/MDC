@@ -11,7 +11,7 @@ permalink: /project-plan/
 ## Project Communication
 
 * Internal documentation: [Google docs folder](https://drive.google.com/#folders/0Bwq_OgwoRF1AekZaTkRwNUlUd3M)
-* Public documentation: [MDC Github pages](http://github.com/articlemetrics/MDC) and [articmetrics.github.io/MDC](http://articlemetrics.github.io/MDC)
+* Public documentation: [MDC Github pages](http://github.com/lagotto/MDC) and [mdc.lagotto.io](http://mdc.lagotto.io)
 * Progress update meetings with entire team at the end of each work unit via conference call
 * Public announcements: blogs and news platforms
   * [CDL Data Pub blog](http://datapub.cdlib.org)
@@ -45,7 +45,7 @@ permalink: /project-plan/
 1. design, develop, and prototype a reference model for data metrics
 1. test mechanisms of automatic tracking
 1. explore ways in which the raw DLM data be delivered to drive data discovery across data types and research questions
-1. prototype a flexible report for funders, institutions, and researchers to share DLM results.  
+1. prototype a flexible report for funders, institutions, and researchers to share DLM results.
 
 ## Work Components
 
@@ -58,25 +58,25 @@ permalink: /project-plan/
 
 ### 2. Data Usage Tracking (Nov-Feb)
 
-  * What: Extend DataONE usage tracking capacity 
+  * What: Extend DataONE usage tracking capacity
   * Who: DataONE with PLOS input
   * Input: existing usage API
   * Output: extended usage API (COUNTER)
- 
+
 ### 3. Data Activity Aggregation (Dec-Apr)
 
   * What: Formulate a set of metrics to text; extend technology
   * Who: PLOS
   * Input: design & requirements
   * Output: DLM application
- 
+
 ### 4. DLM Integration & Presentation (May-Jun)
 
   * What:  Develop tools for the community to use metrics
-  * Who: PLOS 
+  * Who: PLOS
   * Input: ALM Reports source code, DLM data
   * Output: DLM Reports application & widgets
-  
+
 ### Bibliometric Analysis (July-Sep)
 
   * What: Analyze, write up results from project

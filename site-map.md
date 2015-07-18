@@ -4,7 +4,7 @@ title: Site Map
 permalink: /site-map/
 ---
 
-* [About](http://articlemetrics.github.io/MDC/about)
-* [DataONE Focus Group](http://articlemetrics.github.io/MDC/d1-focus)
-* [Internal Project Links and Documents](http://articlemetrics.github.io/MDC/teamdocs)
-* [Project Plan](http://articlemetrics.github.io/MDC/project-plan)
+* [About](http://mdc.lagotto.io/about)
+* [DataONE Focus Group](http://mdc.lagotto.io/d1-focus)
+* [Internal Project Links and Documents](http://mdc.lagotto.io/teamdocs)
+* [Project Plan](http://mdc.lagotto.io/project-plan)
