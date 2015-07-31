@@ -6,6 +6,7 @@ permalink: /blog/
 ## MAKE DATA RAIN
 **8 Jan 2015**
 <br><br>
+<i> Original post <a href="http://datapub.cdlib.org/2015/01/08/make-data-rain/" target="_blank">here</a></i><br> 
 Last October, UC3,  PLOS, and DataONE launched Making Data Count, a collaboration to develop data-level metrics (DLMs). This 12-month National Science Foundation-funded project will pilot a suite of metrics to track and measure data use that can be shared with funders, tenure & promotion committees, and other stakeholders.
 <br><br>
 To understand how DLMs might work best for researchers, we conducted an online survey and held a number of focus groups, which culminated on a very (very) rainy night last December in a discussion at the PLOS offices with researchers in town for the <a href="http://fallmeeting.agu.org/2014/" target="_blank">2014 American Geophysical Union Fall Meeting</a>.
@@ -30,6 +31,7 @@ We would like to thank everyone who attended any of the focus groups. If you hav
 ## DATA: DO YOU CARE? THE DLM SURVEY
 **31 Oct 2014**
 <br><br>
+<i> Original post <a href="http://datapub.cdlib.org/2014/10/31/data-do-you-care-the-dlm-survey/" target="_blank">here</a></i><br> 
 We all know that data is important for research. So how can we quantify that? How can you get credit for the data you produce? What do you want to know about how your data is used?
 <br><br>
 If you are a researcher or data manager, we want to hear from you. Take this <a href="https://www.surveymonkey.com/s/makedatacount" target="_blank">5-10 minute survey</a> and help us craft data-level metrics.
@@ -42,6 +44,7 @@ Read more about the project at <a href="htp://mdc.plos.org" target="_blank">mdc.
 ## UC3, PLOS, AND DATAONE JOIN FORCES TO BUILD INCENTIVES FOR DATA SHARING
 **7 Oct 2014**
 <br><br>
+<i> Original post <a href="http://datapub.cdlib.org/2014/10/07/uc3-plos-and-dataone-join-forces-to-build-incentives-for-data-sharing/" target="_blank">here</a></i><br> 
 We are excited to announce that UC3, in partnership with PLOS and DataONE, are launching **a new project to develop data-level metrics (DLMs)**. This 12-month project is funded by an Early Concept Grants for Exploratory Research (EAGER) grant from the National Science Foundation, and will result in a suite of metrics that track and measure data use. The proposal is available via CDL’s eScholarship repository: http://escholarship.org/uc/item/9kf081vf. More information is also available on the <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1448821&HistoricalAwards=false" target="_blank">NSF Website</a> .
 <br><br>
 **Why DLMs?** Sharing data is time consuming and researchers need incentives for undertaking the extra work. Metrics for data will provide feedback on data usage, views, and impact that will help encourage researchers to share their data. This project will explore and test the metrics needed to capture activity surrounding research data.
