@@ -10,18 +10,8 @@ Last October, UC3,  PLOS, and DataONE launched Making Data Count, a collaboratio
 <br><br>
 To understand how DLMs might work best for researchers, we conducted an online survey and held a number of focus groups, which culminated on a very (very) rainy night last December in a discussion at the PLOS offices with researchers in town for the <a href="http://fallmeeting.agu.org/2014/" target="_blank">2014 American Geophysical Union Fall Meeting</a>.
 <br><br>
-Six eminent researchers participated:
-<ul>
-<li> <a href="http://www.globalchange.umd.edu/staff/bpbond/" target="_blank">Ben Bond-Lamberty </a> <a href="http://www.pnl.gov/" target="_blank">(Pacific Northwest National Laboratory)</a> 
-<li> <a href="http://www.columbia.edu/~jeh1/" target="_blank">Jim Hansen</a> <a href="http://www.columbia.edu/" target="_blank">(Columbia University)</a>
-<li> <a href="http://www.cgd.ucar.edu/staff/andrew/" target="_blank">Andrew Gettelman </a> <a href="http://www2.ucar.edu/" target="_blank">(University Corporation for Atmospheric Research)</a>
-<li> <a href="http://www.cgd.ucar.edu/staff/dschneid/" target="_blank"> David Schneider </a> <a href="http://www2.ucar.edu/" target="_blank">(UCAR)</a>
-<li> <a href="http://www.cgd.ucar.edu/staff/trenbert/" target="_blank"> Kevin Trenberth </a> <a href="http://www2.ucar.edu//" target="_blank">(UCAR)</a>
-<li> <a href="http://openwetware.org/wiki/Yao-Lab:Lab_member#Principal_Investigator" target="_blank"> Maosheng Yao </a> <a href="http://english.pku.edu.cn/" target="_blank">(Peking University, China)</a>
-</ul>
-
+Six eminent researchers participated: <a href="http://www.globalchange.umd.edu/staff/bpbond/" target="_blank">Ben Bond-Lamberty </a> <a href="http://www.pnl.gov/" target="_blank">(Pacific Northwest National Laboratory)</a>, <a href="http://www.columbia.edu/~jeh1/" target="_blank">Jim Hansen</a> <a href="http://www.columbia.edu/" target="_blank">(Columbia University)</a>, <a href="http://www.cgd.ucar.edu/staff/andrew/" target="_blank">Andrew Gettelman </a> <a href="http://www2.ucar.edu/" target="_blank">(University Corporation for Atmospheric Research)</a>, <a href="http://www.cgd.ucar.edu/staff/dschneid/" target="_blank"> David Schneider </a> <a href="http://www2.ucar.edu/" target="_blank">(UCAR)</a>, <a href="http://www.cgd.ucar.edu/staff/trenbert/" target="_blank"> Kevin Trenberth </a> <a href="http://www2.ucar.edu//" target="_blank">(UCAR)</a>, and <a href="http://openwetware.org/wiki/Yao-Lab:Lab_member#Principal_Investigator" target="_blank"> Maosheng Yao </a> <a href="http://english.pku.edu.cn/" target="_blank">(Peking University, China)</a>
 <br><br>
-
 Much of the conversation concerned how to motivate researchers to share data. Sources of external pressure that came up included publishers, funders, and peers. Publishers can require <a href="http://blogs.plos.org/everyone/2014/02/24/plos-new-data-policy-public-access-data-2/" target="_blank">(as PLOS does)</a> that, at a minimum, the data underlying every figure be available. Funders might refuse to ‘count’ publications based on unavailable data, and refuse to renew funding for projects that don’t release data promptly. Finally, other researchers– in some communities, at least– are already disinclined to work with colleagues who won’t share data.
 <br><br>
 However, Making Data Count is particularly concerned with the inverse– not punishing researchers who don’t share, but rewarding those who do. For a researcher, metrics demonstrating data use serve not only to prove to others that their data is valuable, but also to affirm for themselves that taking the time to share their data is worthwhile. The researchers present regarded altmetrics with suspicion and overwhelmingly affirmed that citations are the preferred currency of scholarly prestige.
