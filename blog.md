@@ -1,8 +1,42 @@
 ---
 layout: page
-title: Blog
+title: Making Data Count Blog
 permalink: /blog/
 ---
+## MAKE DATA RAIN
+**8 Jan 2015**
+<br><br>
+Last October, UC3,  PLOS, and DataONE launched Making Data Count, a collaboration to develop data-level metrics (DLMs). This 12-month National Science Foundation-funded project will pilot a suite of metrics to track and measure data use that can be shared with funders, tenure & promotion committees, and other stakeholders.
+<br><br>
+To understand how DLMs might work best for researchers, we conducted an online survey and held a number of focus groups, which culminated on a very (very) rainy night last December in a discussion at the PLOS offices with researchers in town for the 2014 American Geophysical Union Fall Meeting.
+<br><br>
+Six eminent researchers participated:
+* <a href="http://www.globalchange.umd.edu/staff/bpbond/" target="_blank">Ben Bond-Lamberty </a> <a href="http://www.pnl.gov/" target="_blank">(Pacific Northwest National Laboratory)</a> 
+* <a href="http://www.columbia.edu/~jeh1/" target="_blank">Jim Hansen</a> <a href="http://www.columbia.edu/" target="_blank">(Columbia University)</a>
+* <a href="http://www.cgd.ucar.edu/staff/andrew/" target="_blank">Andrew Gettelman </a> <a href="http://www2.ucar.edu/" target="_blank">(University Corporation for Atmospheric Research)</a>
+* <a href="http://www.cgd.ucar.edu/staff/dschneid/" target="_blank"> David Schneider </a> <a href="http://www2.ucar.edu/" target="_blank">(UCAR)</a>
+* <a href="http://www.cgd.ucar.edu/staff/trenbert/" target="_blank"> Kevin Trenberth </a> <a href="http://www2.ucar.edu//" target="_blank">(UCAR)</a>
+* <a href="http://openwetware.org/wiki/Yao-Lab:Lab_member#Principal_Investigator" target="_blank"> Maosheng Yao </a> <a href="http://english.pku.edu.cn/" target="_blank">(Peking University, China)</a>
+<br><br>
+Much of the conversation concerned how to motivate researchers to share data. Sources of external pressure that came up included publishers, funders, and peers. Publishers can require (as PLOS does) that, at a minimum, the data underlying every figure be available. Funders might refuse to ‘count’ publications based on unavailable data, and refuse to renew funding for projects that don’t release data promptly. Finally, other researchers– in some communities, at least– are already disinclined to work with colleagues who won’t share data.
+<br><br>
+However, Making Data Count is particularly concerned with the inverse– not punishing researchers who don’t share, but rewarding those who do. For a researcher, metrics demonstrating data use serve not only to prove to others that their data is valuable, but also to affirm for themselves that taking the time to share their data is worthwhile. The researchers present regarded altmetrics with suspicion and overwhelmingly affirmed that citations are the preferred currency of scholarly prestige.
+<br><br>
+Many of the technical difficulties with data citation (e.g., citing  dynamic data or a particular subset) came up in the course of the conversation. One interesting point was raised by many: when citing a data subset, the needs of reproducibility and credit diverge. For reproducibility, you need to know exactly what data has been used– at a maximum level of granularity. But, credit is about resolving to a single product that the researcher gets credit for, regardless of how much of the dataset or what version of it was used– so less granular is better.
+<br><br>
+We would like to thank everyone who attended any of the focus groups. If you have ideas about how to measure data use, please let us know in the comments!
+<br><br><br>
+
+## DATA: DO YOU CARE? THE DLM SURVEY
+**31 Oct 2014**
+<br><br>
+We all know that data is important for research. So how can we quantify that? How can you get credit for the data you produce? What do you want to know about how your data is used?
+<br><br>
+If you are a researcher or data manager, we want to hear from you. Take this <a href="https://www.surveymonkey.com/s/makedatacount" target="_blank">5-10 minute survey</a> and help us craft data-level metrics.
+<br><br>
+Please share widely! The survey will be open until December 1st.
+<br><br>
+Read more about the project at <a href="htp://mdc.plos.org" target="_blank">mdc.plos.org</a> or check out <a href="http://datapub.cdlib.org/2014/10/07/uc3-plos-and-dataone-join-forces-to-build-incentives-for-data-sharing/" target="_blank">our previous post</a>. Thanks to John Kratz for creating the survey and jumping through IRB hoops!
 
 ## UC3, PLOS, AND DATAONE JOIN FORCES TO BUILD INCENTIVES FOR DATA SHARING
 
@@ -22,38 +56,5 @@ The DLM pilot will build from the successful open source Article-Level Metrics c
 <br><br>
 The <a href="http://cdlib.org/services/uc3" target="_blank">University of California Curation Center</a> (UC3) at the <a href="http://cdlib.org" target="_blank">California Digital Library</a> is a creative partnership bringing together the expertise and resources of the <a href="http://universityofcalifornia.edu" target="_blank">University of California</a>. Together with the UC libraries, we provide high quality and cost-effective solutions that enable campus constituencies – museums, libraries, archives, academic departments, research units and individual researchers – to have direct control over the management, curation and preservation of the information resources underpinning their scholarly activities.
 <br><br><br>
-##DATA: DO YOU CARE? THE DLM SURVEY
-**31 Oct 2014**
-<br><br>
-We all know that data is important for research. So how can we quantify that? How can you get credit for the data you produce? What do you want to know about how your data is used?
-<br><br>
-If you are a researcher or data manager, we want to hear from you. Take this <a href="https://www.surveymonkey.com/s/makedatacount" target="_blank">5-10 minute survey</a> and help us craft data-level metrics.
-<br><br>
-Please share widely! The survey will be open until December 1st.
-<br><br>
-Read more about the project at <a href="htp://mdc.plos.org" target="_blank">mdc.plos.org</a> or check out <a href="http://datapub.cdlib.org/2014/10/07/uc3-plos-and-dataone-join-forces-to-build-incentives-for-data-sharing/" target="_blank">our previous post</a>. Thanks to John Kratz for creating the survey and jumping through IRB hoops!
-
-##MAKE DATA RAIN
-**8 Jan 2015**
-<br><br>
-Last October, UC3,  PLOS, and DataONE launched Making Data Count, a collaboration to develop data-level metrics (DLMs). This 12-month National Science Foundation-funded project will pilot a suite of metrics to track and measure data use that can be shared with funders, tenure & promotion committees, and other stakeholders.
-<br><br>
-To understand how DLMs might work best for researchers, we conducted an online survey and held a number of focus groups, which culminated on a very (very) rainy night last December in a discussion at the PLOS offices with researchers in town for the 2014 American Geophysical Union Fall Meeting.
-<br><br>
-Six eminent researchers participated:
-- Ben Bond-Lamberty (Pacific Northwest National Laboratory)
-- Jim Hansen (Columbia University)
-- Andrew Gettelman (University Corporation for Atmospheric Research)
-- David Schneider (UCAR)
-- Kevin Trenberth (UCAR)
-- Maosheng Yao (Peking University, China)
-<br><br>
-Much of the conversation concerned how to motivate researchers to share data. Sources of external pressure that came up included publishers, funders, and peers. Publishers can require (as PLOS does) that, at a minimum, the data underlying every figure be available. Funders might refuse to ‘count’ publications based on unavailable data, and refuse to renew funding for projects that don’t release data promptly. Finally, other researchers– in some communities, at least– are already disinclined to work with colleagues who won’t share data.
-<br><br>
-However, Making Data Count is particularly concerned with the inverse– not punishing researchers who don’t share, but rewarding those who do. For a researcher, metrics demonstrating data use serve not only to prove to others that their data is valuable, but also to affirm for themselves that taking the time to share their data is worthwhile. The researchers present regarded altmetrics with suspicion and overwhelmingly affirmed that citations are the preferred currency of scholarly prestige.
-<br><br>
-Many of the technical difficulties with data citation (e.g., citing  dynamic data or a particular subset) came up in the course of the conversation. One interesting point was raised by many: when citing a data subset, the needs of reproducibility and credit diverge. For reproducibility, you need to know exactly what data has been used– at a maximum level of granularity. But, credit is about resolving to a single product that the researcher gets credit for, regardless of how much of the dataset or what version of it was used– so less granular is better.
-<br><br>
-We would like to thank everyone who attended any of the focus groups. If you have ideas about how to measure data use, please let us know in the comments!
 
 
