@@ -4,7 +4,7 @@ title: Making Data Count Blog
 permalink: /blog/
 ---
 ## MAKE DATA RAIN
-**8 Jan 2015**
+###8 Jan 2015
 <br><br>
 Last October, UC3,  PLOS, and DataONE launched Making Data Count, a collaboration to develop data-level metrics (DLMs). This 12-month National Science Foundation-funded project will pilot a suite of metrics to track and measure data use that can be shared with funders, tenure & promotion committees, and other stakeholders.
 <br><br>
@@ -28,7 +28,7 @@ We would like to thank everyone who attended any of the focus groups. If you hav
 <br><br><br>
 
 ## DATA: DO YOU CARE? THE DLM SURVEY
-**31 Oct 2014**
+###31 Oct 2014
 <br><br>
 We all know that data is important for research. So how can we quantify that? How can you get credit for the data you produce? What do you want to know about how your data is used?
 <br><br>
@@ -39,8 +39,7 @@ Please share widely! The survey will be open until December 1st.
 Read more about the project at <a href="htp://mdc.plos.org" target="_blank">mdc.plos.org</a> or check out <a href="http://datapub.cdlib.org/2014/10/07/uc3-plos-and-dataone-join-forces-to-build-incentives-for-data-sharing/" target="_blank">our previous post</a>. Thanks to John Kratz for creating the survey and jumping through IRB hoops!
 
 ## UC3, PLOS, AND DATAONE JOIN FORCES TO BUILD INCENTIVES FOR DATA SHARING
-
-**7 Oct 2014**
+###7 Oct 2014
 <br><br>
 We are excited to announce that UC3, in partnership with PLOS and DataONE, are launching **a new project to develop data-level metrics (DLMs)**. This 12-month project is funded by an Early Concept Grants for Exploratory Research (EAGER) grant from the National Science Foundation, and will result in a suite of metrics that track and measure data use. The proposal is available via CDL’s eScholarship repository: http://escholarship.org/uc/item/9kf081vf. More information is also available on the <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1448821&HistoricalAwards=false" target="_blank">NSF Website</a> .
 <br><br>
