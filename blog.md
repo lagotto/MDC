@@ -20,7 +20,7 @@ Many of the technical difficulties with data citation (e.g., citing <a href="htt
 <br><br>
 We would like to thank everyone who attended any of the focus groups. If you have ideas about how to measure data use, please let us know in the comments!
 <br>
-<i>Original post <a href="http://datapub.cdlib.org/2015/01/08/make-data-rain/" target="_blank">here.</a></i>
+<i>(Original post <a href="http://datapub.cdlib.org/2015/01/08/make-data-rain/" target="_blank">here</a>.)</i>
 <br><br><br>
 
 ##DATA: DO YOU CARE? THE DLM SURVEY
@@ -33,7 +33,7 @@ If you are a researcher or data manager, we want to hear from you. Take this <a 
 Please share widely! The survey will be open until December 1st.
 <br><br>
 Read more about the project at <a href="htp://mdc.plos.org" target="_blank">mdc.plos.org</a> or check out <a href="http://datapub.cdlib.org/2014/10/07/uc3-plos-and-dataone-join-forces-to-build-incentives-for-data-sharing/" target="_blank">our previous post</a>. Thanks to John Kratz for creating the survey and jumping through IRB hoops!
-<i><br>Original post <a href="http://datapub.cdlib.org/2014/10/31/data-do-you-care-the-dlm-survey/" target="_blank">here.</a></i>
+<i>(Original post <a href="http://datapub.cdlib.org/2014/10/31/data-do-you-care-the-dlm-survey/" target="_blank">here</a>.)</i>
 <br><br><br>
 
 ##UC3, PLOS, AND DATAONE JOIN FORCES TO BUILD INCENTIVES FOR DATA SHARING
@@ -53,7 +53,7 @@ The DLM pilot will build from the successful open source Article-Level Metrics c
 <br><br>
 The <a href="http://cdlib.org/services/uc3" target="_blank">University of California Curation Center</a> (UC3) at the <a href="http://cdlib.org" target="_blank">California Digital Library</a> is a creative partnership bringing together the expertise and resources of the <a href="http://universityofcalifornia.edu" target="_blank">University of California</a>. Together with the UC libraries, we provide high quality and cost-effective solutions that enable campus constituencies – museums, libraries, archives, academic departments, research units and individual researchers – to have direct control over the management, curation and preservation of the information resources underpinning their scholarly activities.
 <br>
-<i>Original post <a href="http://datapub.cdlib.org/2014/10/07/uc3-plos-and-dataone-join-forces-to-build-incentives-for-data-sharing/" target="_blank">here.</a></i>
+<i>(Original post <a href="http://datapub.cdlib.org/2014/10/07/uc3-plos-and-dataone-join-forces-to-build-incentives-for-data-sharing/" target="_blank">here</a>.)</i>
 <br><br><br>
 
 
