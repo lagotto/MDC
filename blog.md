@@ -21,7 +21,9 @@ permalink: /blog/
 <li><b>Citations:</b> Citations are the coin of the academic realm. They were by far the most interesting metric to both researchers and data managers. Unfortunately, citations are much more difficult than download counts to work with, and relatively few repositories track them. Beyond technical complexity, the biggest challenge is cultural: data citation practices are inconsistent at best, and formal data citation is rare. Despite the difficulty, the value of citations is too high to ignore, even in the short term.</li>
 </ul>
 <p>We have already begun to collect data on the sample project corpus– the entire <a href="https://www.dataone.org/">DataONE</a> collection of 100k+ datasets. Using this pilot corpus, we see preliminary indications of researcher engagement with data across a number of online channels not previously thought to be in use by scholars. The results of this pilot will complement the survey described in today’s paper with real measurement of data-related activities “in the wild.”</p>
-<p>For more conclusions and in-depth discussion of the initial research, see the paper, which is open access and available here: <a href="http://dx.doi.org/10.1038/sdata.2015.39">http://dx.doi.org/10.1038/sdata.2015.39</a>. Stay tuned for analysis and results of the DataONE data-level metrics data on the Making Data Count project page: <a href="http://lagotto.io/MDC/">http://lagotto.io/MDC/</a>.</p> <i>(Original post <a href="http://datapub.cdlib.org/2015/08/04/2334/" target="_blank">here</a>.)</i>
+<p>For more conclusions and in-depth discussion of the initial research, see the paper, which is open access and available here: <a href="http://dx.doi.org/10.1038/sdata.2015.39">http://dx.doi.org/10.1038/sdata.2015.39</a>. Stay tuned for analysis and results of the DataONE data-level metrics data on the Making Data Count project page: <a href="http://lagotto.io/MDC/">http://lagotto.io/MDC/</a>.</p> 
+<br>
+<i>(Original post <a href="http://datapub.cdlib.org/2015/08/04/2334/" target="_blank">here</a>.)</i>
 
 
 <br><br><br>
