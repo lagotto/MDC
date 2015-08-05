@@ -24,7 +24,7 @@ permalink: /blog/
 
 
 <br><br><br>
-## MAKE DATA RAIN
+##MAKE DATA RAIN
 **8 Jan 2015**
 <br><br>
 Last October, UC3,  PLOS, and DataONE launched Making Data Count, a collaboration to develop data-level metrics (DLMs). This 12-month National Science Foundation-funded project will pilot a suite of metrics to track and measure data use that can be shared with funders, tenure & promotion committees, and other stakeholders.
