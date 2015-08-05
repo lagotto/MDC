@@ -3,7 +3,7 @@ layout: page
 title: Making Data Count Blog
 permalink: /blog/
 ---
-##Data Metrics Survey Results Published
+##DATA METRICS SURVEY RESULTS PUBLISHED
 **4 Aug 2015**
 <br><br>
 <p>Today, we are pleased to announce the publication <a href="http://dx.doi.org/10.1038/sdata.2015.39">Making Data Count</a> in <a href="http://www.nature.com/sdata/"><i>Scientific Data</i></a>. John Kratz and Carly Strasser led the research effort to understand the needs and values of both the researchers who create and use data and of the data managers who preserve and publish it. The <a href="http://mdc.lagotto.io">Making Data Count</a> project is a collaboration between the <a href="http://www.cdlib.org/">CDL</a>, <a href="https://www.plos.org/">PLOS</a>, and <a href="https://www.dataone.org/">DataONE</a> to define and implement a practical suite of metrics for evaluating the impact of datasets, which is a necessary prerequisite to widespread recognition of datasets as first class scholarly objects.</p>
@@ -25,7 +25,7 @@ permalink: /blog/
 <p><i>(Original post <a href="http://datapub.cdlib.org/2015/08/04/2334/" target="_blank">here</a>.)</i></p>
 
 <br><br><br>
-##MAKE DATA RAIN
+<h2 id="make-data-rain">MAKE DATA RAIN</h2>
 **8 Jan 2015**
 <br><br>
 Last October, UC3,  PLOS, and DataONE launched Making Data Count, a collaboration to develop data-level metrics (DLMs). This 12-month National Science Foundation-funded project will pilot a suite of metrics to track and measure data use that can be shared with funders, tenure & promotion committees, and other stakeholders.
