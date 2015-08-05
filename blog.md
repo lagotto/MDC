@@ -3,6 +3,27 @@ layout: page
 title: Making Data Count Blog
 permalink: /blog/
 ---
+##Data Metrics Survey Results Published
+**4 Aug 2015**
+<br><br>
+<p>Today, we are pleased to announce the publication <a href="http://dx.doi.org/10.1038/sdata.2015.39">Making Data Count</a> in <a href="http://www.nature.com/sdata/"><i>Scientific Data</i></a>. John Kratz and Carly Strasser led the research effort to understand the needs and values of both the researchers who create and use data and of the data managers who preserve and publish it. The <a href="http://mdc.lagotto.io">Making Data Count</a> project is a collaboration between the <a href="http://www.cdlib.org/">CDL</a>, <a href="https://www.plos.org/">PLOS</a>, and <a href="https://www.dataone.org/">DataONE</a> to define and implement a practical suite of metrics for evaluating the impact of datasets, which is a necessary prerequisite to widespread recognition of datasets as first class scholarly objects.</p>
+<p>We started the project with research to understand what metrics would be meaningful to stakeholders and what metrics we can practically collect. We conducted a literature review, <a href="http://datapub.cdlib.org/2015/01/08/make-data-rain/">focus groups</a>, and– the subject of today’s paper–  a pair of online surveys for researchers and data managers.</p>
+<p>In November and December of 2014, 247 researchers and 73 data repository managers answered our questions about data sharing, use, and metrics.<img class="alignright wp-image-2336" src="https://datapub.files.wordpress.com/2015/08/postfigure.png?w=349&#038;h=206" alt="Graph of interest in various metrics" width="349" height="206" /> Survey and anonymized data are <a href="http://dash.ucop.edu/xtf/view?docId=ucop/ark%2B%3Db5060%3Dd8h59d/mrt-datacite.xml">available in the Dash repository</a>. These responses told us, among other things, which existing Article Level Metrics (ALMs) might be profitably applied to data:</p>
+<ul>
+<li><b>Social media</b>: We should not worry excessively about capturing social media (Twitter, Facebook, etc.) activity around data yet, because there is not much to capture. Only 9% of researchers said they would “definitely” use social media to look for a dataset.</li>
+<li><b>Page views:</b> Page views are widely collected by repositories but neither researchers nor data managers consider them meaningful. (It stands to reason that, unlike a paper, you can&#8217;t have engaged very deeply with a dataset if all you&#8217;ve done is read about it.)</li>
+</ul>
+<ul>
+<li><b>Downloads:</b> Download counts, on the other hand, are both highly valuable and practical to collect. Downloads were a resounding second-choice metric for researchers and 85% of repositories already track them.</li>
+</ul>
+<ul>
+<li><b>Citations:</b> Citations are the coin of the academic realm. They were by far the most interesting metric to both researchers and data managers. Unfortunately, citations are much more difficult than download counts to work with, and relatively few repositories track them. Beyond technical complexity, the biggest challenge is cultural: data citation practices are inconsistent at best, and formal data citation is rare. Despite the difficulty, the value of citations is too high to ignore, even in the short term.</li>
+</ul>
+<p>We have already begun to collect data on the sample project corpus– the entire <a href="https://www.dataone.org/">DataONE</a> collection of 100k+ datasets. Using this pilot corpus, we see preliminary indications of researcher engagement with data across a number of online channels not previously thought to be in use by scholars. The results of this pilot will complement the survey described in today’s paper with real measurement of data-related activities “in the wild.”</p>
+<p>For more conclusions and in-depth discussion of the initial research, see the paper, which is open access and available here: <a href="http://dx.doi.org/10.1038/sdata.2015.39">http://dx.doi.org/10.1038/sdata.2015.39</a>. Stay tuned for analysis and results of the DataONE data-level metrics data on the Making Data Count project page: <a href="http://lagotto.io/MDC/">http://lagotto.io/MDC/</a>.</p>
+
+
+<br><br><br>
 ## MAKE DATA RAIN
 **8 Jan 2015**
 <br><br>
