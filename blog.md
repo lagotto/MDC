@@ -12,7 +12,7 @@ permalink: /blog/
 <p>Survey and anonymized data are <a href="http://dash.ucop.edu/xtf/view?docId=ucop/ark%2B%3Db5060%3Dd8h59d/mrt-datacite.xml">available in the Dash repository</a>. These responses told us, among other things, which existing Article Level Metrics (ALMs) might be profitably applied to data:</p>
 <ul>
 <li><b>Social media</b>: We should not worry excessively about capturing social media (Twitter, Facebook, etc.) activity around data yet, because there is not much to capture. Only 9% of researchers said they would “definitely” use social media to look for a dataset.</li>
-<li><b>Page views:</b> Page views are widely collected by repositories but neither researchers nor data managers consider them meaningful. (It stands to reason that, unlike a paper, you can&#8217;t have engaged very deeply with a dataset if all you&#8217;ve done is read about it.)</li>
+<li><b>Page views:</b> Page views are widely collected by repositories but neither researchers nor data managers consider them meaningful. (It stands to reason that, unlike a paper, you can't have engaged very deeply with a dataset if all you've done is read about it.)</li>
 </ul>
 <ul>
 <li><b>Downloads:</b> Download counts, on the other hand, are both highly valuable and practical to collect. Downloads were a resounding second-choice metric for researchers and 85% of repositories already track them.</li>
@@ -23,9 +23,8 @@ permalink: /blog/
 <p>We have already begun to collect data on the sample project corpus– the entire <a href="https://www.dataone.org/">DataONE</a> collection of 100k+ datasets. Using this pilot corpus, we see preliminary indications of researcher engagement with data across a number of online channels not previously thought to be in use by scholars. The results of this pilot will complement the survey described in today’s paper with real measurement of data-related activities “in the wild.”</p>
 <p>For more conclusions and in-depth discussion of the initial research, see the paper, which is open access and available here: <a href="http://dx.doi.org/10.1038/sdata.2015.39">http://dx.doi.org/10.1038/sdata.2015.39</a>. Stay tuned for analysis and results of the DataONE data-level metrics data on the Making Data Count project page: <a href="http://lagotto.io/MDC/">http://lagotto.io/MDC/</a>.</p> 
 <p><i>(Original post <a href="http://datapub.cdlib.org/2015/08/04/2334/" target="_blank">here</a>.)</i></p>
-
 <br><br><br>
-<h2 id="make-data-rain">MAKE DATA RAIN</h2>
+##MAKE DATA RAIN
 **8 Jan 2015**
 <br><br>
 Last October, UC3,  PLOS, and DataONE launched Making Data Count, a collaboration to develop data-level metrics (DLMs). This 12-month National Science Foundation-funded project will pilot a suite of metrics to track and measure data use that can be shared with funders, tenure & promotion committees, and other stakeholders.
