@@ -24,6 +24,7 @@ permalink: /blog/
 <p>For more conclusions and in-depth discussion of the initial research, see the paper, which is open access and available here: <a href="http://dx.doi.org/10.1038/sdata.2015.39">http://dx.doi.org/10.1038/sdata.2015.39</a>. Stay tuned for analysis and results of the DataONE data-level metrics data on the Making Data Count project page: <a href="http://lagotto.io/MDC/">http://lagotto.io/MDC/</a>.</p> 
 <p><i>(Original post <a href="http://datapub.cdlib.org/2015/08/04/2334/" target="_blank">here</a>.)</i></p>
 <br><br><br>
+
 ##MAKE DATA RAIN
 **8 Jan 2015**
 <br><br>
